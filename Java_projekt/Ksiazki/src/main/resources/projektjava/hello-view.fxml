@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="758.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projektjava.Tabela">
+   <children>
+      <Label alignment="CENTER" layoutX="58.0" layoutY="-22.0" prefHeight="20.0" prefWidth="641.0" text="Biblioteka" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font name="Papyrus" size="51.0" />
+         </font></Label>
+      <TableView fx:id="table" layoutX="118.0" layoutY="72.0" prefHeight="283.0" prefWidth="521.0" AnchorPane.bottomAnchor="149.59999999999997" AnchorPane.leftAnchor="118.0" AnchorPane.rightAnchor="118.0" AnchorPane.topAnchor="72.0">
+         <columns>
+            <TableColumn fx:id="ID" prefWidth="26.400017142295837" text="ID" />
+            <TableColumn fx:id="Tytuł" prefWidth="77.59997367858887" text="Tytuł" />
+            <TableColumn fx:id="ilość_stron" prefWidth="72.00000762939453" text="ilość_stron" />
+            <TableColumn fx:id="Autor" prefWidth="82.4000244140625" text="Autor" />
+            <TableColumn fx:id="redakcja" prefWidth="94.40008544921875" text="redakcja" />
+            <TableColumn fx:id="rok_wydania" prefWidth="68.80001831054688" text="rok_wydania" />
+            <TableColumn fx:id="rodzaj" minWidth="0.0" prefWidth="93.59994506835938" text="rodzaj" />
+         </columns>
+      </TableView>
+      <Button cache="true" layoutX="116.0" layoutY="355.0" mnemonicParsing="false" onMouseClicked="#refresh" prefHeight="59.0" prefWidth="126.0" style="-fx-border-radius: 20; -fx-border-color: black; -fx-border-width: 4; -fx-background-color: darkgreen; -fx-active: red;" text="Odśwież" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Black" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="242.0" layoutY="355.0" mnemonicParsing="false" onMouseClicked="#add" prefHeight="59.0" prefWidth="132.0" style="-fx-border-color: black; -fx-background-color: green; -fx-border-width: 4; -fx-border-radius: 20;" text="Dodaj">
+         <font>
+            <Font name="Segoe UI Black" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="374.0" layoutY="355.0" mnemonicParsing="false" onMouseClicked="#Delete" prefHeight="59.0" prefWidth="132.0" style="-fx-background-color: lightgreen; -fx-border-color: black; -fx-border-width: 4; -fx-border-radius: 20;" text="Usuń">
+         <font>
+            <Font name="Segoe UI Black" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="506.0" layoutY="355.0" mnemonicParsing="false" onMouseClicked="#Insert" prefHeight="59.0" prefWidth="132.0" style="-fx-background-color: yellow; -fx-border-color: black; -fx-border-width: 4; -fx-border-radius: 20;" text="Edytuj">
+         <font>
+            <Font name="Segoe UI Black" size="17.0" />
+         </font>
+      </Button>
+      <Line endX="700.0000610351562" fill="BLACK" layoutX="58.0" layoutY="357.0" startX="-58.0000114440918" strokeWidth="5.0" />
+      <Line endX="17.99999237060547" endY="120.00003051757812" layoutX="98.0" layoutY="384.0" startX="18.00000762939453" startY="-384.8142395019531" strokeWidth="2.0" />
+      <Line endX="-6.103515625E-5" endY="-432.0" layoutX="638.0" layoutY="432.0" startX="-6.103515625E-5" startY="72.0" strokeWidth="2.0" />
+      <Line endX="386.69989013671875" layoutX="374.0" layoutY="414.0" startX="-374.0" strokeWidth="2.0" />
+      <VBox layoutX="17.0" layoutY="52.0" prefHeight="200.0" prefWidth="100.0" />
+      <TextField fx:id="szukaj" layoutX="306.0" layoutY="413.0" />
+      <Text layoutX="193.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wyszukaj element" wrappingWidth="114.93670654296875" />
+   </children>
+</AnchorPane>
